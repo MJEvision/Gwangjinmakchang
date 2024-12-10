@@ -10,7 +10,7 @@ class Carousel {
         this.autoSlideInterval = null;
 
         this.options = {
-            autoSlideInterval: 3000,
+            autoSlideInterval: 5000,
             transition: 'transform 0.5s ease',
             ...options
         };
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carouselContainers = document.querySelectorAll('.carousel-container, .carousel-container2');
     carouselContainers.forEach(container => {
         new Carousel(container, {
-            autoSlideInterval: 3000,
+            autoSlideInterval: 5000,
         });
     });
 
