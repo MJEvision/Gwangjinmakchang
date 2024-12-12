@@ -884,80 +884,163 @@ nav {
     }
 
     #main {
+        display: flex;
         height: auto;
         overflow-x: hidden;
-        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
     }
-
+    
     #main .main-texts {
         margin: auto;
         width: 100%;
-        padding: 0 30px;
+        padding: 0 15px; 
+        text-align: center; 
     }
-
+    
     #main .main-text1 {
-        font-size: 2.5rem;
-        letter-spacing: 0.5px;
-
+        font-size: 0.5rem; 
+        letter-spacing: 0.3px; 
     }
-
+    
     #main .main-text2 {
-        font-size: 4rem;
+        font-size: 1.2rem; 
     }
-
-    #main .main-text3, #main .main-text4 {
-        font-size: 1.8rem;
+    
+    #main .main-text3,
+    #main .main-text4 {
+        font-size: 1.1rem; 
     }
+    
+    
 
     #section-company {
         height: auto;
-        margin-bottom: 30px;
+        min-height: 100vh;
+        padding: 2rem 0;
+        background-size: contain;
+        background-position: center bottom;
     }
 
-    #section-company  .background-element {
+    .company-bar {
         display: none;
     }
 
-    #section-company .company-bar {
+    .company-lines {
+        display: none;
+    }
+
+    .line-1, .line-2, .line-3, .line-4, .line-5, .line-6 {
+        width: 60px;
+    }
+
+    .company-texts {
+        transform: none;
+        font-size: 1.8rem;
+        gap: 45px;
+        margin-top: 150px;
+    }
+
+    .company-text, 
+    .company-text2, 
+    .company-text3, 
+    .company-text4, 
+    .company-text5, 
+    .company-text6 {
+        padding-left: 40px;
+    }
+
+    #section-company2 {
+        height: auto;
+        min-height: 90vh;
+        padding: 0;
+    }
+
+    .company2-text {
         width: 100%;
-    }
-
-    #section-company .bar {
-        width: 0.2rem;
-    }
-
-    #section-company .company-lines {
-        gap: 10rem;
-        padding-left: 8rem;
-    }
-
-    #section-company .company-texts {
-        font-size: 2rem;
-        padding-left: 30rem;
-        margin-top: 80%;
-    }
-
-    #section-company .company2-text {
-        width: 100%;
-        font-size: 2rem;
+        height: auto;
+        font-size: 2.2rem;
         text-align: center;
-    }
-
-    #section-company .company2-img {
-        object-fit: cover;
-    }
-
-    #section-company .company2-ExplainFrame {
-        width: 95%;
+        transform: none;
+        margin: 2rem auto;
         padding: 1rem;
-        flex-direction: column;
     }
 
-    #section-company .company2-order {
-        gap: 5rem;
-        flex-direction: column;
-        align-items: center;
+    .company2-imgs {
+        display: block;  
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        line-height: 0;  
+        font-size: 0;    
     }
+
+    .company2-imgs img {
+        display: block;  
+        width: 100%;
+        height: auto;
+        margin: 0;      
+        padding: 0;     
+    }
+
+    .company2-ExplainFrame {
+        width: 100%;
+        transform: none;
+        margin: 0;
+        padding: 1.5rem;
+        border-radius: 0;
+    }
+
+    .company2-order {
+        display: none;
+    }
+
+    .company2-texts {
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        white-space: nowrap;
+        gap: 50px;
+    }
+
+    .company2-text1,
+    .company2-text2,
+    .company2-text3 {
+        transform: none;
+        width: auto;
+        flex-shrink: 0;
+        text-align: center;
+        margin: 0;
+        min-width: max-content;
+    }
+        @media screen and (max-width: 480px) {
+            .company-texts {
+                font-size: 1.6rem;
+            }
+        
+            .company2-text {
+                font-size: 2rem;
+            }
+        
+            .company-lines {
+                margin-left: -30px;
+            }
+        
+            .line-1, .line-2, .line-3, .line-4, .line-5, .line-6 {
+                width: 100px;
+            }
+        
+            .company-text, 
+            .company-text2, 
+            .company-text3, 
+            .company-text4, 
+            .company-text5, 
+            .company-text6 {
+                padding-left: 30px;
+            }
+        }
 
     #section-product {
         height: auto;
@@ -1045,5 +1128,3 @@ nav {
         text-align: center;
     }
 }
-
-
