@@ -202,10 +202,12 @@ nav {
     align-items: center;
     text-align: center;
     transform: translateY(-130%);
-    margin-right: 40%;
+    margin-right: 20%;
     font-weight: 700;
     font-family: "Noto Sans KR", sans-serif;
     color: #f2efdc;
+    margin-top: 3%;
+    margin-left: 3%;
 }
 
 .main-text1 {
@@ -888,7 +890,6 @@ nav {
     }
 
     #main .main-texts {
-        margin-right: 0; 
         margin: auto;
         width: 100%;
         padding: 0 30px;
